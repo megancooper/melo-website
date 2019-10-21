@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Config directories
 const SRC_DIR = path.resolve(__dirname, 'src');
-const OUTPUT_DIR = path.resolve(__dirname, './build');
+const OUTPUT_DIR = path.resolve(__dirname, './docs');
 
 // Any directories you will be adding code/files into, need to be
 // added to this array so webpack will pick them up
