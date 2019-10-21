@@ -19,7 +19,8 @@ ReactDOM.render(
     <Header />
     <Router>
       <Route component={Download} exact path='/download' />
-      <Route component={Home} exact path='/*' />
+      <Route component={Home} exact path='/home' />
+      <Route component={Home} exact path='/' />
     </Router>
     <Footer />
   </Provider>,
