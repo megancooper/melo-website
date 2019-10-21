@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "melo website",
   "main": "src/index.js",
-  "homepage": "https://melo-website.github.io/",
+  "homepage": "https://megancooper.github.io/melo-website",
   "scripts": {
     "build": "webpack --config webpack.config.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:prod": "webpack --config webpack.prod.js --color",
