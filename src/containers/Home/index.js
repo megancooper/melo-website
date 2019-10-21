@@ -26,7 +26,7 @@ const IssuesLink = <a
 
 const DownloadLink = <a
   className='download-btn'
-  href='/download'>Download Melo</a>;
+  href='#download'>Download Melo</a>;
 
 class Home extends Component {
 

@@ -13,12 +13,12 @@ class Header extends Component {
       <div className='header' style={{ backgroundColor: purple }}>
         <div className='content'>
           <nav>
-            <a className='logo-link' href='/'>
+            <a className='logo-link' href='#home'>
               <img alt='logo' src={Logo} />
               <div className='logo-name'>melo</div>
             </a>
             <ul className='menu'>
-              <li><a href='/download'>download</a></li>
+              <li><a href='#download'>download</a></li>
               <li><a href='https://github.com/megancooper/melo-issues/wiki'
                 rel='noopener noreferrer'
                 target='_blank'>docs</a></li>

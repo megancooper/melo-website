@@ -15,7 +15,7 @@ class Footer extends Component {
   render() {
     return (
       <div className='footer'>
-        <a className='logo-link' href='/'>
+        <a className='logo-link' href='/#'>
           <img alt='logo' src={Logo} />
           <div className='logo-name'>melo</div>
         </a>

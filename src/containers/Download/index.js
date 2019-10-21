@@ -7,17 +7,17 @@ const purple = chroma('#513496').alpha(0.2).css();
 const DownloadMac = <a
   className='download-link-disabled'
   disabled
-  href='/download'>mac os (.dmg)</a>;
+  href='#download'>mac os (.dmg)</a>;
 
 const DownloadWin = <a
   className='download-link-disabled'
   disabled
-  href='/download'>windows (.exe)</a>;
+  href='#download'>windows (.exe)</a>;
 
 const DownloadLinux = <a
   className='download-link-disabled'
   disabled
-  href='/download'>linux (.appimage)</a>;
+  href='#download'>linux (.appimage)</a>;
 
 class Home extends Component {
 

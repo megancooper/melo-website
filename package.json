@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --hot",
     "dev": "npm-run-all --parallel build start",
     "predeploy": "npm run build:prod",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d docs"
   },
   "repository": {
     "type": "git",
