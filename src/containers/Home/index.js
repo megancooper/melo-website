@@ -12,12 +12,12 @@ const ReactLink = <a
 const ReduxLink = <a
   href='https://redux.js.org?ref=melo'
   rel='noopener noreferrer'
-  target='_blank'>React</a>;
+  target='_blank'>Redux</a>;
 
 const ElectronLink = <a
   href='https://www.electronjs.org?ref=melo'
   rel='noopener noreferrer'
-  target='_blank'>React</a>;
+  target='_blank'>Electron</a>;
 
 const IssuesLink = <a
   href='https://github.com/megancooper/melo-issues/issues'
