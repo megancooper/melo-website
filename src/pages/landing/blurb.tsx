@@ -72,8 +72,8 @@ const Blurb = () => (
         .
       </p>
 
-      <div className="mt-10 flex">
-        <input disabled placeholder="Coming shortly..." type="email" className="mr-2 flex-grow" />
+      <div className="mt-10 flex flex-col lg:flex-row">
+        <input disabled placeholder="Coming shortly..." type="email" className="mb-4 lg:mr-2 lg:mb-0 flex-grow" />
         <Button disabled>Stay Updated</Button>
       </div>
     </div>

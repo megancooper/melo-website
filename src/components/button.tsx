@@ -11,7 +11,7 @@ const Button = ({
   children, type, disabled, ...rest
 } : Props) => (
   <button
-    className="rounded-sm px-2 py-1 focus:outline-none"
+    className="rounded-sm px-2 py-2 lg:py-1 focus:outline-none"
     type={type}
     disabled={disabled}
     {...rest}
