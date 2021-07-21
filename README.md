@@ -1,2 +1,8 @@
-# melo-website
-Website for melo music player
+# NextJS + Typescript + TailwindCSS Template
+
+
+## Get Started
+
+```
+yarn run dev
+```

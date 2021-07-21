@@ -1,0 +1,11 @@
+{
+    "eslint.validate": ["typescript", "typescriptreact"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "cSpell.words": [
+        "formik",
+        "scrumylist",
+        "signup"
+    ],
+}

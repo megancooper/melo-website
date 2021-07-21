@@ -1,0 +1,142 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/**
+ * Import custom themes
+ */
+@import './themes/light.css';
+@import './themes/dark.css';
+
+.light {
+  --bg-color: theme(colors.white);
+  --text: theme(colors.gray.900);
+  --text-contrast: theme(colors.white);
+  --hover: theme(colors.gray.50);
+
+  --primary-light-3: #ECF0FE;
+  --primary-light-2: #D8E1FD;
+  --primary-light-1: #B1C3FB;
+  --primary: #8AA4F9;
+  --primary-dark-1: #6386F8;
+
+  --accent-light-1: #294A66;
+  --accent: #172A3A;
+
+  --error: #FA5845;
+  --error-fill: #FFE8E6;
+}
+
+
+* {
+  color: var(--text);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+footer {
+  background-color: var(--accent);
+  color: var(--text-contrast);
+}
+
+footer a,
+footer p,
+footer div,
+footer a p {
+  color: var(--text-contrast);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--text-contrast);
+}
+
+button:hover {
+  background-color: var(--primary-dark-1);
+  color: var(--text);
+}
+
+button:disabled {
+  background-color: var(--primary-light-1);
+  color: var(--accent-light-1);
+  cursor: not-allowed;
+}
+
+input[type=email],
+input[type=text],
+input[type=password] {
+  border: 2px solid theme(colors.gray.300);
+  outline: none;
+  border-radius: 0.15rem;
+  padding: 0.5rem;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+  border-color: var(--primary);
+}
+
+.bg-theme {
+  background-color: var(--bg-color);
+}
+
+.bg-primary-light-1 {
+  background-color: var(--primary-light-1);
+}
+
+.bg-primary-light-2 {
+  background-color: var(--primary-light-2);
+}
+
+.bg-primary-light-3 {
+  background-color: var(--primary-light-3);
+}
+
+.border-primary-light-2 {
+  border: 2px solid var(--primary-light-2);
+}
+
+.border-dashed-primary {
+  border: 2px dashed var(--primary);
+}
+
+.theme:hover {
+  background-color: var(--hover);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.primary-fill {
+  fill: var(--primary);
+}
+
+.blend {
+  color: var(--bg-color);
+}
+
+.error {
+  color: var(--error);
+}
+
+.bg-error {
+  background-color: var(--error-fill);
+}
