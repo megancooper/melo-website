@@ -171,7 +171,7 @@
   resolved "http://local-npm-proxy.elasticbeanstalk.com/@opentelemetry%2fcontext-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
-"@types/classnames@^2.2.10":
+"@types/classnames@^2.3.1":
   version "2.3.1"
   resolved "http://local-npm-proxy.elasticbeanstalk.com/@types%2fclassnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
   integrity sha512-zeOWb0JGBoVmlQoznvqXbE0tEC/HONsnoUNH19Hc96NFsTAwTXbTqb8FMYkru1F/iqp7a18Ws3nWJvtA1sHD1A==
