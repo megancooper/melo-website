@@ -33,3 +33,11 @@ Run the app locally: `make start` (You may get issues if you run this from a ter
 The .vscode folder has two debugging configurations. The "Electron: Main" build configuration allows you to step through and 
 debug the main electron process. The "Electron: Renderer" build configuration allows you to debug and see the actual electron
 application.
+
+### Running the website locally
+
+```
+yarn install
+
+yarn run dev
+```
