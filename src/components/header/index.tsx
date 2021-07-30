@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Hamburger from './hamburger';
 import Button from '../button';
 
@@ -6,9 +7,15 @@ const Header = () => (
   <nav className="mt-2">
     <div className="container mx-auto px-6 py-2 flex justify-between items-center">
       <ul className="inline-flex items-center">
-        <li>
+        <li className="inline-flex items-center">
+          <Image
+            src="/assets/melo.png"
+            alt="headphones"
+            height={50}
+            width={50}
+          />
           <Link href="/">
-            <a className="font-bold text-2xl lg:text-4xl mr-5">
+            <a className="font-bold text-2xl lg:text-4xl mr-5 ml-4">
               Melo
             </a>
           </Link>
