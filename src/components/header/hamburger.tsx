@@ -49,10 +49,17 @@ const Hamburger = () => {
             </Link>
           </li> */}
           <li className="p-3">
-            <a className="px-10 hover:text-gray-800" href="https://github.com/megancooper/melo-issues/issues" target="_blank" rel="noreferrer">Issues</a>
+            <Link href="/why">
+              <a className="px-10 hover:text-gray-800">Why?</a>
+            </Link>
           </li>
           <li className="p-3">
-            <Link href="/signup">
+            <Link href="/feedback">
+              <a className="px-10 hover:text-gray-800">👉 Give Feedback</a>
+            </Link>
+          </li>
+          <li className="p-3">
+            <Link href="/beta">
               <a className="px-10 hover:text-gray-800">Join Beta</a>
             </Link>
           </li>

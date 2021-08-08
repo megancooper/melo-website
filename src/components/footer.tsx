@@ -6,12 +6,17 @@ const Footer = () => (
     <div className="container mx-auto flex flex-col lg:flex-row justify-between py-5">
       <ul className="inline-flex flex-col flex-1">
         <li className="p-1">
-          <Link href="/login">
-            <a className="px-10" href="https://github.com/megancooper/melo-issues/issues" target="_blank" rel="noreferrer">Issues</a>
+          <Link href="/why">
+            <a className="px-10">Why?</a>
           </Link>
         </li>
         <li className="p-1">
-          <Link href="/signup">
+          <Link href="/feedback">
+            <a className="px-10">👉 Give Feedback</a>
+          </Link>
+        </li>
+        <li className="p-1">
+          <Link href="/beta">
             <a className="px-10">Join Beta</a>
           </Link>
         </li>
@@ -37,7 +42,7 @@ const Footer = () => (
           </a>
         </li>
         <li className="p-1">
-          <p className="px-10">&copy; Megan Cooper Software, LLC All Rights Reserved</p>
+          <p className="px-10">&copy; Yam Software, LLC All Rights Reserved</p>
         </li>
       </ul>
     </div>

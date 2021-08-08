@@ -4,7 +4,7 @@ import Header from '../../components/header';
 import Blurb from './blurb';
 import Footer from '../../components/footer';
 
-const Landing = () => (
+const Why = () => (
   <>
     <Head>
       <title>Melo</title>
@@ -17,4 +17,4 @@ const Landing = () => (
   </>
 );
 
-export default Landing;
+export default Why;

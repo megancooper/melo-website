@@ -58,7 +58,9 @@ button:disabled {
   cursor: not-allowed;
 }
 
+textarea,
 input[type=email],
+input[type=textarea],
 input[type=text],
 input[type=password] {
   border: 2px solid theme(colors.gray.300);
@@ -67,7 +69,9 @@ input[type=password] {
   padding: 0.5rem;
 }
 
+textarea:focus,
 input[type=email]:focus,
+input[type=textarea],
 input[type=text]:focus,
 input[type=password]:focus {
   border-color: var(--primary);
@@ -97,6 +101,10 @@ input[type=password]:focus {
   border: 2px dashed var(--primary);
 }
 
+.border-bottom-primary {
+  border-bottom: 1px solid var(--primary);
+}
+
 .theme:hover {
   background-color: var(--hover);
 }
@@ -119,4 +127,20 @@ input[type=password]:focus {
 
 .bg-error {
   background-color: var(--error-fill);
+}
+
+.email-button {}
+
+@media (min-width: 1024px) {
+  .email-button {
+    width: 114.84px;
+  }
+}
+
+.feedback-button {}
+
+@media (min-width: 1024px) {
+  .feedback-button {
+    width: 142.42px;
+  }
 }
