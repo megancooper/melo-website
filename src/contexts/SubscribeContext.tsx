@@ -28,6 +28,7 @@ export const SubscribeContextProvider = ({children}: ContextProps) => {
 
   const subscribe = async (email: string) => {
     setIsSubscribing(true);
+    setSuccess(false);
 
     const subscribeError = await Api.subscribe(email);
 

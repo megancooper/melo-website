@@ -42,7 +42,7 @@ const Footer = () => (
           </a>
         </li>
         <li className="p-1">
-          <p className="px-10">&copy; Yam Software, LLC All Rights Reserved</p>
+          <p className="px-10">&copy; Yam Software, LLC 2021</p>
         </li>
       </ul>
     </div>
