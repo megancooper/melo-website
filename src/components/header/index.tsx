@@ -32,6 +32,9 @@ const Header = () => (
             </Link>
           </li>
           <li>
+            <a href="https://docs.melo-app.org" className="px-4 hover:text-gray-800">Docs</a>
+          </li>
+          <li>
             <Link href="/feedback">
               <a className="px-4 hover:text-gray-800">👉 Give Feedback</a>
             </Link>

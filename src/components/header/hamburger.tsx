@@ -54,6 +54,9 @@ const Hamburger = () => {
             </Link>
           </li>
           <li className="p-3">
+            <a href="https://docs.melo-app.org" className="px-10 hover:text-gray-800">Docs</a>
+          </li>
+          <li className="p-3">
             <Link href="/feedback">
               <a className="px-10 hover:text-gray-800">👉 Give Feedback</a>
             </Link>

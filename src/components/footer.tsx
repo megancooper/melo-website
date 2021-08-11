@@ -11,6 +11,9 @@ const Footer = () => (
           </Link>
         </li>
         <li className="p-1">
+          <a href="https://docs.melo-app.org" className="px-10">Docs</a>
+        </li>
+        <li className="p-1">
           <Link href="/feedback">
             <a className="px-10">👉 Give Feedback</a>
           </Link>
