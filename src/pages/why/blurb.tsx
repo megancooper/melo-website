@@ -26,7 +26,13 @@ const Blurb: React.FC = () => (
       <li>Organize your local audio files into playlists</li>
       <li>Create and modify custom player views including album art, artist names, and more</li>
       <li>Customize audio playback with the builtin equalizer</li>
-      <li>And more!</li>
+      <li>
+        And more! Checkout out
+        {' '}
+        <a className="primary cursor-pointer border-bottom-primary" href="https://docs.melo-app.org">the docs</a>
+        {' '}
+        for all the features.
+      </li>
     </ul>
 
     <p className="text-center text-xl mb-6 mx-6 lg:mx-64 mt-4 bg-primary-light-3 p-4 rounded">
