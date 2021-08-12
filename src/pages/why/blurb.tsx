@@ -7,7 +7,7 @@ const Blurb: React.FC = () => (
       A simple, modern music player
     </h2>
 
-    <p className="text-base text-2xl mb-6 mx-6">
+    <p className="text-base text-lg mb-6 mx-6 lg:mx-64">
       I grew up using buying albums on Vinyl, grabbing their digital copies,
       and listening to them both on my record player and on my computer. Apps like
       WinAmp and VLC were great and I still love the nostalgia of those days, but
@@ -22,7 +22,7 @@ const Blurb: React.FC = () => (
       With Melo you can:
     </h2>
 
-    <ul className="text-xl list-disc mx-6 mb-4">
+    <ul className="text-lg list-disc mx-6 mb-4">
       <li>Organize your local audio files into playlists</li>
       <li>Create and modify custom player views including album art, artist names, and more</li>
       <li>Customize audio playback with the builtin equalizer</li>
@@ -30,9 +30,7 @@ const Blurb: React.FC = () => (
     </ul>
 
     <p className="text-center text-xl mb-6 mx-6 lg:mx-64 mt-4 bg-primary-light-3 p-4 rounded">
-      I really want this to be a great music player for all enthusiasts who have
-      got a hoard of music on their computer. If you have any features you would love
-      to see, please let me know buy
+      If you have any features you would love to see, please let me know buy
       {' '}
       <Link href="/feedback">
         <span className="primary cursor-pointer border-bottom-primary">submitting your suggestions</span>
