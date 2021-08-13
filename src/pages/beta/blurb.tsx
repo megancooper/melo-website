@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Blurb: React.FC = () => (
-  <div className="container mx-auto px-6 py-2 flex flex-col justify-between items-center mt-10 lg:mt-20 overflow-scroll">
+  <div className="container mx-auto px-6 py-2 pt-24 lg:pt-0 flex flex-col justify-between items-center mt-10 lg:mt-20 overflow-scroll lg:overflow-hidden">
     <h2 className="text-3xl lg:text-5xl font-bold mb-6 mx-6">
       Beta signup coming soon!
     </h2>

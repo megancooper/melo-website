@@ -11,7 +11,7 @@ const Feedback = () => {
       <Head>
         <title>Feedback</title>
       </Head>
-      <div className="h-screen flex flex-col">
+      <div className="lg:h-screen flex flex-col">
         <Header />
         <Form />
       </div>

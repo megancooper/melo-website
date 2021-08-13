@@ -9,7 +9,7 @@ const Why = () => (
     <Head>
       <title>Melo</title>
     </Head>
-    <div className="h-screen flex flex-col">
+    <div className="lg:h-screen flex flex-col">
       <Header />
       <Blurb />
     </div>

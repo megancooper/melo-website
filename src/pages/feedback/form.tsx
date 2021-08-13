@@ -24,7 +24,7 @@ const Form = () => {
   ) => create(value.email, value.feedback, formikContext);
 
   return (
-    <div className="container mx-auto px-6 py-2 flex justify-between items-center mt-20">
+    <div className="container mx-auto px-6 py-2 pb-24 lg:pb-0 flex justify-between items-center mt-20">
       <div className="mx-auto mt-10 w-full lg:w-4/6 flex flex-col">
         <h1 className="text-5xl font-bold mb-6 mx-auto">
           Tell us what you think 👀

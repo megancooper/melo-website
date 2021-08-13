@@ -9,7 +9,7 @@ const Landing = () => (
     <Head>
       <title>Melo</title>
     </Head>
-    <div className="h-screen flex flex-col">
+    <div className="min-h-screen lg:h-screen flex flex-col">
       <Header />
       <Blurb />
     </div>
