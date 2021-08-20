@@ -25,7 +25,7 @@ const Api = {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        FEEDBACK_SECRET: process.env.FEEDBACK_SECRET || '',
+        FEEDBACK_SECRET: process.env.NEXT_FEEDBACK_SECRET || '',
       },
       body: JSON.stringify({
         email: email || '',
