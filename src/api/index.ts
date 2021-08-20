@@ -25,7 +25,7 @@ const Api = {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        FEEDBACK_SECRET: 'bx7mjb6mVpUqyLLAVIqoLlRdjHJPWbuxqckcKiIKQj1lIDKFf3Deww2NtDnJrtqVZviHl697tut8XoabZyFZ5g==',
+        feedback_secret: 'bx7mjb6mVpUqyLLAVIqoLlRdjHJPWbuxqckcKiIKQj1lIDKFf3Deww2NtDnJrtqVZviHl697tut8XoabZyFZ5g==',
       },
       body: JSON.stringify({
         email: email || '',
