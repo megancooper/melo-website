@@ -1,5 +1,4 @@
 const MELO_API = process.env.NEXT_PUBLIC_MELO_API;
-const FEEDBACK_SECRET = process.env.NEXT_FEEDBACK_SECRET || '';
 
 const Api = {
   subscribe: async (email: string) => {
@@ -26,7 +25,7 @@ const Api = {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        FEEDBACK_SECRET: FEEDBACK_SECRET || '',
+        FEEDBACK_SECRET: 'bx7mjb6mVpUqyLLAVIqoLlRdjHJPWbuxqckcKiIKQj1lIDKFf3Deww2NtDnJrtqVZviHl697tut8XoabZyFZ5g==',
       },
       body: JSON.stringify({
         email: email || '',
