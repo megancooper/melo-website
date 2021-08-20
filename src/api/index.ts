@@ -2,7 +2,7 @@ const {NEXT_PUBLIC_MELO_API} = process.env;
 
 const Api = {
   subscribe: async (email: string) => {
-    const res = await fetch(`${NEXT_PUBLIC_MELO_API}/stay-updated`, {
+    const res = await fetch(`${NEXT_PUBLIC_MELO_API}/api/stay-updated`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -25,6 +25,7 @@ const Api = {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
+        FEEDBACK_SECRET: process.env.FEEDBACK_SECRET || '',
       },
       body: JSON.stringify({
         email: email || '',
