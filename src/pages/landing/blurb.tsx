@@ -41,6 +41,8 @@ const Blurb: React.FC = () => {
           alt="scrumy-list design"
           width={1000}
           height={700}
+          priority
+          placeholder="blur"
         />
       </div>
       <div>
