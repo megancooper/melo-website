@@ -38,16 +38,6 @@ const Hamburger = () => {
           onClick={handleClose}
         />
         <ul className="inline-flex flex-col absolute top-0 left-0 z-10 w-screen bg-theme shadow">
-          {/* <li className="p-3">
-            <Link href="/about">
-              <a className="px-10 hover:text-gray-800">About</a>
-            </Link>
-          </li>
-          <li className="p-3">
-            <Link href="/pricing">
-              <a className="px-10 hover:text-gray-800">Pricing</a>
-            </Link>
-          </li> */}
           <li className="p-3">
             <Link href="/why">
               <a className="px-10 hover:text-gray-800">Why?</a>
@@ -59,11 +49,6 @@ const Hamburger = () => {
           <li className="p-3">
             <Link href="/feedback">
               <a className="px-10 hover:text-gray-800">👉 Give Feedback</a>
-            </Link>
-          </li>
-          <li className="p-3">
-            <Link href="/beta">
-              <a className="px-10 hover:text-gray-800">Join Beta</a>
             </Link>
           </li>
         </ul>

@@ -34,10 +34,10 @@ const Blurb: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-2 pb-24 lg:pb-0 flex justify-between items-center mt-20">
+    <div className="container mx-auto px-6 py-2 lg:pb-0 flex justify-between items-center mt-20">
       <div className="hidden lg:inline-block mr-10">
         <Image
-          src="/assets/melo-recording.png"
+          src="/assets/melo-screenshot.png"
           alt="scrumy-list design"
           width={1000}
           height={700}
@@ -60,9 +60,6 @@ const Blurb: React.FC = () => {
         <p>
           Melo is a simple music organizer built to help you play and manage
           audio files on your computer.
-          {' '}
-          <br />
-          It&apos;s like WinAmp + Spotify for your local audio files.
         </p>
 
         <div className="mt-10 flex flex-col lg:flex-row">

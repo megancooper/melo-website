@@ -17,6 +17,8 @@
  */
 @import './themes/light.css';
 @import './themes/dark.css';
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inconsolata:wght@700');
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700'); */
 
 * {
   color: var(--text);
@@ -143,4 +145,8 @@ input[type=password]:focus {
   .feedback-button {
     width: 142.42px;
   }
+}
+
+.font-inconsolata {
+  font-family: 'Inconsolata', monospace;
 }

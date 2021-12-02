@@ -36,12 +36,7 @@ const Header = () => (
           </li>
           <li>
             <Link href="/feedback">
-              <a className="px-4 hover:text-gray-800">👉 Give Feedback</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/beta">
-              <Button>Join Beta</Button>
+              <Button>👉 Give Feedback</Button>
             </Link>
           </li>
         </ul>
