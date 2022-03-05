@@ -5,7 +5,7 @@ import Button from '../button';
 
 const Header = () => (
   <nav className="mt-2">
-    <div className="container mx-auto px-6 py-2 flex justify-between items-center">
+    <div className="container mx-auto px-8 py-2 flex justify-between items-center">
       <ul className="inline-flex items-center">
         <li className="inline-flex items-center">
           <Image
@@ -24,8 +24,8 @@ const Header = () => (
 
       <Hamburger />
 
-      <div className="hidden lg:block">
-        <ul className="inline-flex flex-col items-center lg:flex-row">
+      <div className="hidden md:block">
+        <ul className="inline-flex flex-col items-center md:flex-row">
           <li>
             <Link href="/why">
               <a className="px-4 hover:text-gray-800">Why?</a>

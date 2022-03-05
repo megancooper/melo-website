@@ -1,5 +1,5 @@
 import React from 'react';
-import {HandIndexThumbFill, FileEarmarkMusicFill, Stars} from 'react-bootstrap-icons';
+import {HandIndexThumbFill, FileEarmarkMusicFill, Laptop} from 'react-bootstrap-icons';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -8,10 +8,10 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({icon, title, description}: FeatureCardProps) => (
-  <div className="md:max-w-sm lg:max-w-xs xl:max-w-sm mt-8 pl-8 pr-8 font-inconsolata">
+  <div className="w-full bg-gray-50 hover:bg-white lg:mr-4 last:mr-0 lg:max-w-xs xl:max-w-sm mt-8 p-8 font-inconsolata rounded-md border-2 border-gray-300 hover:shadow-md transition duration-150 ease-in-out transform hover:-translate-y-5">
     <div className="inline-flex items-center mb-4">
       {icon}
-      <div className="ml-4 font-bold">{title}</div>
+      <div className="ml-4 font-bold text-lg">{title}</div>
     </div>
     <div>
       {description}
@@ -31,16 +31,16 @@ const HIGHLIGHTED_FEATURES = [
     description: 'Craving features only available with streaming apps? Group your locals files by curating playlists within Melo.',
   },
   {
-    icon: <Stars size={36} fill="#6386F8" className="bg-primary-light-2 p-2 rounded" />,
-    title: 'Custom Themes',
-    description: 'Want a custom experience? Toggle between Melo\'s light and dark themes.',
+    icon: <Laptop size={36} fill="#6386F8" className="bg-primary-light-2 p-2 rounded" />,
+    title: 'Multi-platform Support',
+    description: 'Melo is available on all major platforms, including Windows, MacOS, and Linux.',
   },
 ];
 
 const Features: React.FC = () => (
-  <div className="container mx-auto mt-20 mb-20 flex justify-center">
-    <div>
-      <div className="flex flex-wrap">
+  <div className="bg-primary-light-2">
+    <div className="container px-6 py-2 lg:pb-0 lg:mt-20 mb-20 mx-auto flex justify-center lg:w-full">
+      <div className="flex flex-col lg:flex-row justify-between">
         {HIGHLIGHTED_FEATURES.map(
           ({icon, title, description}, index) => (
             <FeatureCard

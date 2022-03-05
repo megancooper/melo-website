@@ -16,7 +16,7 @@ const Hamburger = () => {
 
   return (
     <>
-      <div className="block lg:hidden">
+      <div className="block md:hidden">
         <button
           ref={hamburgerMenu}
           type="button"
