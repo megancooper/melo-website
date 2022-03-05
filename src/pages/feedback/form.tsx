@@ -53,7 +53,7 @@ const Form = () => {
                 className="mb-4 lg:mb-6 flex-grow"
               />
               <Button
-                onClick={handleSubmit}
+                onClick={() => handleSubmit()}
                 className="lg:mx-auto"
               >
                 Submit Feedback
