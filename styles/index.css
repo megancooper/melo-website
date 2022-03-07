@@ -154,3 +154,41 @@ input[type=password]:focus {
 .btn-hover-fill:hover svg {
   fill: rgba(0, 0, 0, var(--tw-text-opacity));
 }
+
+.background-icon {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .background-icon {
+    display: block;  
+  }
+}
+
+.blurb {}
+@media (min-width: 1024px) {
+  .blurb {
+    padding-bottom: 34rem;
+  }
+}
+
+.screenshot-overlay {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .screenshot-overlay {
+    display: block;
+    width: 70vw;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .screenshot-overlay {
+    width: 70vw;
+    height: 80vh;
+  }
+}
+
+
+

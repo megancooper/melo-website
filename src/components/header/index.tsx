@@ -4,7 +4,7 @@ import Hamburger from './hamburger';
 import Button from '../button';
 
 const Header = () => (
-  <nav className="mt-2">
+  <nav className="shadow-md">
     <div className="container mx-auto px-8 py-2 flex justify-between items-center">
       <ul className="inline-flex items-center">
         <li className="inline-flex items-center">
@@ -36,7 +36,7 @@ const Header = () => (
           </li>
           <li>
             <Link href="/feedback">
-              <Button>👉 Give Feedback</Button>
+              <Button>👉&nbsp;&nbsp;Give Feedback</Button>
             </Link>
           </li>
         </ul>

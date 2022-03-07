@@ -39,7 +39,7 @@ const HIGHLIGHTED_FEATURES = [
 
 const Features: React.FC = () => (
   <div className="bg-primary-light-2">
-    <div className="container px-6 py-2 lg:pb-0 lg:mt-20 mb-20 mx-auto flex justify-center lg:w-full">
+    <div className="container px-6 py-2 lg:pb-0 lg:mt-96 mb-20 mx-auto flex justify-center lg:w-full">
       <div className="flex flex-col lg:flex-row justify-between">
         {HIGHLIGHTED_FEATURES.map(
           ({icon, title, description}, index) => (

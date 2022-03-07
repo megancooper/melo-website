@@ -15,7 +15,7 @@ const Footer = () => (
         </li>
         <li className="p-1">
           <Link href="/feedback">
-            <a className="px-10">👉 Give Feedback</a>
+            <a className="px-10">👉&nbsp;&nbsp;Give Feedback</a>
           </Link>
         </li>
         <li className="p-1">

@@ -48,7 +48,7 @@ const Hamburger = () => {
           </li>
           <li className="p-3">
             <Link href="/feedback">
-              <a className="px-10 hover:text-gray-800">👉 Give Feedback</a>
+              <a className="px-10 hover:text-gray-800">👉&nbsp;&nbsp;Give Feedback</a>
             </Link>
           </li>
         </ul>

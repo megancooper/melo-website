@@ -16,9 +16,10 @@ const Landing: React.FC<LandingProps> = ({latestVersion}: LandingProps) => (
     <Head>
       <title>Melo</title>
     </Head>
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <Header />
       <Blurb latestVersion={latestVersion} />
+
       <Features />
       <Beta latestVersion={latestVersion} />
       <Subscribe />
