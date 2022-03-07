@@ -6,7 +6,9 @@ interface GetOS {
 }
 
 const getOS = (): GetOS => {
+  // @ts-ignore
   const {userAgent} = global.window?.navigator || {};
+  // @ts-ignore
   const {platform} = global.window?.navigator || {};
   const macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
   const windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
