@@ -1,83 +1,105 @@
 import React, {useContext} from 'react';
-import {Formik, Field} from 'formik';
-import {BeatLoader} from 'react-spinners';
-import * as Yup from 'yup';
-import {Check} from 'react-bootstrap-icons';
+import cx from 'classnames';
+import {
+  Container,
+  TextInput,
+  Button,
+  createStyles,
+} from '@mantine/core';
+import {useForm} from '@mantine/form';
 import SubscribeContext from '../../contexts/SubscribeContext';
-import Button from '../../components/button';
 
-const validationSchema = Yup.object().shape({
-  email: Yup.string()
-    .min(1, 'You must enter an email.')
-    .email('Please enter a valid email.')
-    .required('Email is required.'),
-});
+const useStyles = createStyles(theme => ({
+  fullBleed: {
+    backgroundColor: theme.colors.indigo[1],
+  },
+
+  wrapper: {
+    paddingTop: theme.spacing.xl * 4,
+    paddingBottom: theme.spacing.xl * 4,
+  },
+
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'end',
+    margin: 'auto',
+    width: 'fit-content',
+    position: 'relative',
+
+    [theme.fn.largerThan('sm')]: {
+      flexDirection: 'row',
+    },
+  },
+
+  textInput: {
+    [theme.fn.largerThan('sm')]: {
+      minWidth: 400,
+      marginRight: '0.5rem',
+    },
+  },
+
+  submit: {
+    width: '100%',
+    [theme.fn.largerThan('sm')]: {
+      width: 'initial',
+    },
+  },
+
+  submitError: {
+    margin: 0,
+    position: 'absolute',
+    top: '50%',
+    right: 0,
+    '-ms-transform': 'translate(-50%, -50%)',
+    transform: 'translate(100%, -48%)',
+  },
+}));
 
 const Subscribe = () => {
-  const {
-    isSubscribing, subscribe, success, error,
-  } = useContext(SubscribeContext);
+  const {classes} = useStyles();
+  const {subscribe} = useContext(SubscribeContext);
 
-  const handleSubscribe = (values: {email: string}) => subscribe(values.email);
+  const subscribeForm = useForm({
+    initialValues: {
+      email: '',
+    },
 
-  const getButtonBackground = () => {
-    if (success) return '#7BCA8E';
-
-    return '#6386F8';
-  };
-
-  const getButtonContent = () => {
-    if (success) {
-      return (
-        <div className="flex items-center">
-          <span className="text-white">Thanks!</span>
-          <Check color="#FFF" size={25} className="m-auto" />
-        </div>
-      );
-    }
-
-    return 'Stay Updated';
-  };
+    validate: {
+      email: (value: string) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+    },
+  });
 
   return (
-    <div style={{backgroundColor: '#8AA4F9'}}>
-      <div className="container mx-auto px-6 py-2 lg:px-48 lg:pb-0 flex justify-center items-center my-20 flex-col lg:flex-row relative">
-        <div className="text-lg font-semibold tracking-wide mb-8 lg:mb-0 lg:mr-8">
-          Join the mailing list&nbsp;&nbsp;👉&nbsp; 📩 &nbsp;&nbsp;
-          <div
-            className="text-xs error mt-2 font-normal"
-            style={{color: '#333'}}
-          >
-            {error}
-          </div>
-        </div>
-        <Formik
-          enableReinitialize
-          initialValues={{email: ''}}
-          validationSchema={validationSchema}
-          onSubmit={handleSubscribe}
-        >
-          {({handleSubmit}) => (
-            <div className="flex items-center flex-col lg:flex-row relative">
-              <Field
-                placeholder="Enter your email"
-                type="email"
-                name="email"
-                className="mb-4 lg:mr-2 lg:mb-0 flex-grow shadow"
-                style={{width: 300}}
-              />
-              <Button
-                onClick={() => handleSubmit()}
-                className="email-button w-full lg:w-auto"
-                style={{backgroundColor: getButtonBackground(), padding: '0.6rem'}}
-              >
-                {isSubscribing ? <BeatLoader size={7} color="#8AA4F9" /> : getButtonContent()}
-              </Button>
-            </div>
-          )}
-        </Formik>
-      </div>
+    <div className={classes.fullBleed}>
+      <Container className={classes.wrapper}>
 
+        <form
+          onSubmit={subscribeForm.onSubmit((values: {email: string}) => subscribe(values.email))}
+          className={classes.form}
+        >
+          <TextInput
+            placeholder="Your email"
+            label="Receive updates about Melo"
+            className={classes.textInput}
+            required
+            {...subscribeForm.getInputProps('email')}
+          />
+          <Button
+            variant="default"
+            type="submit"
+            className={cx(
+              classes.submit,
+              {
+                [classes.submitError]: !!subscribeForm.errors.email,
+              },
+            )}
+          >
+            Subscribe
+          </Button>
+        </form>
+
+      </Container>
     </div>
   );
 };

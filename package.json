@@ -8,6 +8,10 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@mantine/core": "4.0.2",
+    "@mantine/form": "^4.0.2",
+    "@mantine/hooks": "4.0.2",
+    "@mantine/next": "4.0.2",
     "classnames": "2.3.x",
     "date-fns": "2.10.0",
     "formik": "2.2.9",
@@ -36,8 +40,7 @@
     "eslint-plugin-jsx-a11y": "6.x.x",
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-react-hooks": "4.x.x",
-    "postcss": "8.2.4",
-    "tailwindcss": "2.0.2"
+    "postcss": "8.2.4"
   },
   "license": "MIT"
 }

@@ -1,12 +1,13 @@
 import React, {createContext, useState} from 'react';
-import {FormikHelpers} from 'formik';
 import Api from '../api';
+
+export interface FeedbackForm {email: string, feedback: string}
 
 interface FeedbackContextType {
   isSubmitting: boolean;
   error: string;
   success: boolean;
-  create: (email: string, feedback: string, formikContext: FormikHelpers<FeedbackForm>) => void;
+  sendFeedback: (values: FeedbackForm, resetForm: (...rest: any) => void) => void;
   setSuccess: (success: boolean) => void;
 }
 
@@ -14,7 +15,7 @@ const Context = createContext<FeedbackContextType>({
   isSubmitting: false,
   error: '',
   success: false,
-  create: () => {},
+  sendFeedback: () => {},
   setSuccess: () => {},
 });
 
@@ -24,28 +25,23 @@ interface ContextProps {
   children: JSX.Element[] | JSX.Element;
 }
 
-interface FeedbackForm {
-  email: string;
-  feedback: string;
-}
-
 export const FeedbackContextProvider = ({children}: ContextProps) => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
   const [success, setSuccess] = useState<boolean>(false);
 
-  const create = async (
-    email: string, feedback: string, formikContext: FormikHelpers<FeedbackForm>,
+  const sendFeedback = async (
+    values: {email: string, feedback: string}, resetForm: () => void,
   ) => {
     setIsSubmitting(true);
-    const feedbackError = await Api.feedback(email, feedback);
+    const feedbackError = await Api.feedback(values.email, values.feedback);
 
     if (feedbackError) {
       setSuccess(false);
       setError(feedbackError);
     } else {
       setSuccess(true);
-      formikContext.resetForm();
+      resetForm();
       setError('');
     }
 
@@ -56,7 +52,7 @@ export const FeedbackContextProvider = ({children}: ContextProps) => {
     <Context.Provider
       value={{
         isSubmitting,
-        create,
+        sendFeedback,
         error,
         success,
         setSuccess,

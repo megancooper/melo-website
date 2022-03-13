@@ -1,8 +1,14 @@
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
+import {createGetInitialProps} from '@mantine/next';
 
-export default class MyDocument extends Document {
+const getInitialProps = createGetInitialProps();
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export default class _Document extends Document {
+  static getInitialProps = getInitialProps;
+
   render() {
     return (
       <Html lang="en">
