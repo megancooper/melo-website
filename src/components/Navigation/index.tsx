@@ -9,6 +9,17 @@ import {NAVIGATION_LINKS} from '../../constants';
 import Logo from '../Logo';
 
 const useStyles = createStyles(theme => ({
+  header: {
+    position: 'fixed',
+    zIndex: 10000,
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 60,
+    backgroundColor: '#fff',
+    borderBottom: '1px solid #dee2e6',
+  },
+
   inner: {
     height: 56,
     display: 'flex',
@@ -105,7 +116,7 @@ const Navigation = () => {
   });
 
   return (
-    <Header height={56}>
+    <Header height={56} className={classes.header}>
       <Container>
         <div className={classes.inner}>
           <Logo />

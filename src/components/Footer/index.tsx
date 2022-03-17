@@ -65,6 +65,7 @@ const useStyles = createStyles(theme => ({
     fontSize: theme.fontSizes.sm,
     paddingTop: 3,
     paddingBottom: 3,
+    cursor: 'pointer',
 
     '&:hover': {
       textDecoration: 'underline',
@@ -114,15 +115,12 @@ const Footer = () => {
   const {classes} = useStyles();
   const groups = FOOTER_LINKS.map(group => {
     const links = group.links.map((link, index) => (
-      <Text<'a'>
-        key={index}
-        className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={event => event.preventDefault()}
+      <Link
+        key={link.label}
+        href={link.link || '#'}
       >
-        {link.label}
-      </Text>
+        <span className={classes.link}>{link.label}</span>
+      </Link>
     ));
 
     return (
