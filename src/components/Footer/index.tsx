@@ -114,7 +114,7 @@ const useStyles = createStyles(theme => ({
 const Footer = () => {
   const {classes} = useStyles();
   const groups = FOOTER_LINKS.map(group => {
-    const links = group.links.map((link, index) => (
+    const links = group.links.map(link => (
       <Link
         key={link.label}
         href={link.link || '#'}
