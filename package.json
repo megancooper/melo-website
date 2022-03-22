@@ -8,7 +8,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mantine/core": "4.x.x",
+    "@mantine/core": "4.0.2",
     "@mantine/form": "4.x.x",
     "@mantine/hooks": "4.x.x",
     "@mantine/next": "4.x.x",
