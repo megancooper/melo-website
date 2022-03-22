@@ -11,7 +11,7 @@ import Logo from '../Logo';
 const useStyles = createStyles(theme => ({
   header: {
     position: 'fixed',
-    zIndex: 10000,
+    zIndex: 299,
     top: 0,
     left: 0,
     right: 0,
