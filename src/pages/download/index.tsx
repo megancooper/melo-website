@@ -56,9 +56,8 @@ const Download: React.FC<DownloadProps> = ({latestVersion = '0.0.1'}: DownloadPr
   const {classes} = useStyles();
   const {download} = useDownload();
 
-  const navHeight = 56;
   const footerHeight = 320;
-  const containerHeight = `calc(100vh - ${footerHeight}px - ${navHeight}px)`;
+  const containerHeight = `calc(100vh - ${footerHeight}px)`;
 
   return (
     <Container className={classes.wrapper} style={{height: containerHeight}}>

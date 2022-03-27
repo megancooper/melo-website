@@ -74,9 +74,8 @@ const Feedback: React.FC = () => {
     },
   });
 
-  const navHeight = 56;
   const footerHeight = 320;
-  const containerHeight = `calc(100vh - ${footerHeight}px - ${navHeight}px)`;
+  const containerHeight = `calc(100vh - ${footerHeight}px)`;
 
   return (
     <Container className={classes.wrapper} style={{height: containerHeight}}>
