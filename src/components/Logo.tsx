@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import {createStyles} from '@mantine/core';
+import Image from './Image';
 
 const useStyles = createStyles(() => ({
   wrapper: {
@@ -24,11 +24,10 @@ export default () => {
     <Link href="/">
       <div className={classes.wrapper}>
         <Image
-          src="/assets/wave.png"
+          src="wave.png"
           alt="logo"
-          height={25}
-          width={25}
-          quality={100}
+          height="25"
+          width="25"
         />
         <h1 className={classes.text}>Melo</h1>
       </div>

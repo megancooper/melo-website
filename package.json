@@ -5,20 +5,27 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@mantine/core": "4.0.2",
     "@mantine/form": "4.x.x",
     "@mantine/hooks": "4.x.x",
     "@mantine/next": "4.x.x",
+    "@next/bundle-analyzer": "12.1.4",
     "classnames": "2.x.x",
+    "imagemin-optipng": "8.0.0",
     "next": "12",
+    "next-compose-plugins": "2.2.1",
+    "next-optimized-images": "2.6.2",
     "react": "17.0.2",
     "react-bootstrap-icons": "1.7.2",
     "react-dom": "17.0.2",
     "react-modal": "3.14.3",
     "react-spinners": "0.11.0",
+    "responsive-loader": "2.3.0",
+    "sharp": "0.30.3",
     "typescript": "4.0.3"
   },
   "devDependencies": {
@@ -28,6 +35,7 @@
     "@types/react-dom": "16.9.8",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "autoprefixer": "10.2.1",
+    "cross-env": "7.0.3",
     "eslint": "7.x.x",
     "eslint-config-airbnb-typescript": "12.x.x",
     "eslint-plugin-import": "2.x.x",

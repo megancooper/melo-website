@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import {
   createStyles,
   Container,
@@ -8,6 +7,7 @@ import {
   Group,
   Text,
 } from '@mantine/core';
+import Image from '../../components/Image';
 import getOS from '../../utils/getOS';
 import useDownload from '../../hooks/useDownload';
 
@@ -21,7 +21,7 @@ const useStyles = createStyles(theme => ({
 
   content: {
     maxWidth: 480,
-    marginRight: theme.spacing.xl * 3,
+    marginRight: theme.spacing.xl * 2,
 
     [theme.fn.smallerThan('md')]: {
       maxWidth: '100%',
@@ -107,11 +107,8 @@ const Header = ({latestVersion}: HeaderProps) => {
             </Group>
           </div>
           <Image
-            src="/assets/alpha-screenshot.png"
+            src="alpha-screenshot.png"
             alt="melo app screenshot"
-            width={1508}
-            height={1095}
-            quality={100}
             className={classes.image}
           />
         </div>
