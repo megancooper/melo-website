@@ -252,15 +252,14 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@mantine/core@4.0.2":
-  version "4.0.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fcore/-/core-4.0.2.tgz#499ff56883b2360c646815d47d0d441638c01e48"
-  integrity sha512-Q1pMaRUlcmoZCZpjNVtxih96iIqjjCzUhBg3EN++cdal6WDhtt+XmHPjiP4PR8Oh41kLK0eO1GEyE0wUI5Slhg==
+"@mantine/core@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fcore/-/core-4.1.3.tgz#71265ae157f7f6b7b42c33e5b47a4e7f45356ce8"
+  integrity sha512-uIJNWUdoT8dpFBYXDbllv3d2GRgWftFZ3rIV22dN3o1XnJZ44a4woX7aWO8vDmv0H62CTZDyz02jWriLFMmfLQ==
   dependencies:
-    "@mantine/styles" "4.0.2"
+    "@mantine/styles" "4.1.3"
     "@popperjs/core" "^2.9.3"
     "@radix-ui/react-scroll-area" "^0.1.1"
-    clsx "^1.1.1"
     react-popper "^2.2.5"
     react-textarea-autosize "^8.3.2"
 
@@ -274,43 +273,31 @@
   resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fhooks/-/hooks-4.1.2.tgz#7d9af7e505bdfb017a37181ed4061fa66e37cbae"
   integrity sha512-ccTD4q7jViYisizjydRkCZdiMrtbC+uxEsZHHjyy/adcK8zOix178bag53OKn5TIFFMH6dXHZmto0IZsVCY1vw==
 
-"@mantine/next@4.x.x":
-  version "4.1.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fnext/-/next-4.1.2.tgz#1c1188972929a80490aefd3af97eab865a9996cf"
-  integrity sha512-TJRPbn5kalhiDsYorPDtpRr9mhcxnBEb1L+4+ILxyfx481ioFydojpKA66rX2SyzGlumQxeyrumQb7dXe9G02g==
+"@mantine/next@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fnext/-/next-4.1.3.tgz#9f789780a3a4f41736af3366058bdb0ef62f484d"
+  integrity sha512-8YPSbzO3CKkiMKuV6lRFpDRgICXsHWgs6UJQQZtbUq7GJNNmE3hxkma2NUUKzcRZ3FFfPgTHUCbV/OePPaGPFg==
   dependencies:
-    "@mantine/ssr" "4.1.2"
+    "@mantine/ssr" "4.1.3"
 
-"@mantine/ssr@4.1.2":
-  version "4.1.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fssr/-/ssr-4.1.2.tgz#75ec0c479455dd62bfbbc268dac93e3404af15b6"
-  integrity sha512-bH2EAnKlZhrlxCn+W1lNfPBWbJJFCii5XgpLhOk7Fe8imlF6VL9dwHd1uMfBo/dl5tBgBH+AiFZ+BuTyfrpfxw==
+"@mantine/ssr@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fssr/-/ssr-4.1.3.tgz#5ea457cd41ae5065ad6c5d71fed2fd0c96e7be62"
+  integrity sha512-EuIK+ZYuo/CBZSIQ40pktfx8DxvLNP5wqro7HsNssl/0eJkyRwwm4oBj2yCdQ8YyRM0CQ8Ngc0+UbInlVQyJrA==
   dependencies:
     "@emotion/cache" "^11.7.1"
     "@emotion/react" "^11.7.1"
     "@emotion/serialize" "^1.0.2"
     "@emotion/server" "^11.4.0"
     "@emotion/utils" "^1.0.0"
-    "@mantine/styles" "4.1.2"
+    "@mantine/styles" "4.1.3"
     csstype "^3.0.9"
     html-react-parser "^1.3.0"
 
-"@mantine/styles@4.0.2":
-  version "4.0.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fstyles/-/styles-4.0.2.tgz#ff99910f476e18eaabc73623fc97c18b60ead524"
-  integrity sha512-r0Ti9UTJB7OKxzOinAFcsub7J7v7F9zaUDYNgCfs+t/vU/8S5S3C7K9ohRUYBoNIvm+MJYsn+zs6jWy0ku3i4A==
-  dependencies:
-    "@emotion/cache" "^11.7.1"
-    "@emotion/react" "^11.7.1"
-    "@emotion/serialize" "^1.0.2"
-    "@emotion/utils" "^1.0.0"
-    clsx "^1.1.1"
-    csstype "^3.0.9"
-
-"@mantine/styles@4.1.2":
-  version "4.1.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fstyles/-/styles-4.1.2.tgz#81440bb8fc72fb3d05df1e7779d8326d2c6c297f"
-  integrity sha512-HcBrmKzEV7jbBBxicnHUl/Ol/eS5hrZ4lt4hpoi/yD/VVx0BHolK4LkiHCvoh9vFHHN2o9gQo236LgHbqYMEGA==
+"@mantine/styles@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fstyles/-/styles-4.1.3.tgz#a570cfe080ed66867b54f3a7ee9ec1bce821ae9a"
+  integrity sha512-wkyfwPlLs4QWa5q3FfpqS0xGbAvnPEapKhfRKSQta3EqpwejolfwlhZMyJCOoah0RiVp4eWjucWSBApwvDZjxQ==
   dependencies:
     "@emotion/cache" "^11.7.1"
     "@emotion/react" "^11.7.1"
@@ -1379,7 +1366,7 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-cross-env@^7.0.3:
+cross-env@7.0.3:
   version "7.0.3"
   resolved "http://local-npm-proxy.elasticbeanstalk.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
   integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
