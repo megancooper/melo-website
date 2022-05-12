@@ -263,15 +263,15 @@
     react-popper "^2.2.5"
     react-textarea-autosize "^8.3.2"
 
-"@mantine/form@4.x.x":
-  version "4.1.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fform/-/form-4.1.2.tgz#50a8c9c2cc3247adbf7dc425526be2b93d9ab298"
-  integrity sha512-34VXh+NSEFCPcU5FvOn1A8EPk0obldBHTx9JJUI5f0WYttNhNwE/cnA/Vb15p5CYizgyCB40OgwAQsUw/AwsyA==
+"@mantine/form@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fform/-/form-4.1.3.tgz#3f546b35e57b3e970838c03f038d3005f36fbe33"
+  integrity sha512-yHd/lEPVziUwv3yU045ak3Ar/gM1I7WNI9gFtEau2x5VRyLFZzc82c7eUYdNcPlJzJZrBNQffyVh5938jS5mng==
 
-"@mantine/hooks@4.x.x":
-  version "4.1.2"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fhooks/-/hooks-4.1.2.tgz#7d9af7e505bdfb017a37181ed4061fa66e37cbae"
-  integrity sha512-ccTD4q7jViYisizjydRkCZdiMrtbC+uxEsZHHjyy/adcK8zOix178bag53OKn5TIFFMH6dXHZmto0IZsVCY1vw==
+"@mantine/hooks@4.1.3":
+  version "4.1.3"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/@mantine%2fhooks/-/hooks-4.1.3.tgz#5deb782689ce2a90e7276d1454ad660385ceb6cf"
+  integrity sha512-sFDdpg8TjopSqFICNEX4OYUAbarAVn35FkRfE6vk4u2ecf8ySHO12XbBn/1zybTOD1dUACT8GJ0KI0WsYgT7Uw==
 
 "@mantine/next@4.1.3":
   version "4.1.3"
@@ -4933,10 +4933,10 @@ type-fest@^0.8.1:
   resolved "http://local-npm-proxy.elasticbeanstalk.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typescript@4.0.3:
-  version "4.0.3"
-  resolved "http://local-npm-proxy.elasticbeanstalk.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
-  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+typescript@4.x.x:
+  version "4.6.4"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
+  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 unbox-primitive@^1.0.0:
   version "1.0.1"
