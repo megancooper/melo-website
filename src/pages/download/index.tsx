@@ -48,8 +48,8 @@ interface DownloadProps {
 
 const VERSIONS = [
   {label: 'MacOS', value: OS.MAC},
-  {label: 'Windows', value: OS.WINDOWS},
-  {label: 'Linux', value: OS.LINUX},
+  {label: 'Windows', value: OS.WINDOWS, disabled: true},
+  {label: 'Linux', value: OS.LINUX, disabled: true},
 ];
 
 const Download: React.FC<DownloadProps> = ({latestVersion = '0.0.1'}: DownloadProps) => {
@@ -83,10 +83,11 @@ const Download: React.FC<DownloadProps> = ({latestVersion = '0.0.1'}: DownloadPr
         </Text>
 
         <Group mt={30} position="center">
-          {VERSIONS.map(({label, value}) => (
+          {VERSIONS.map(({label, value, disabled}) => (
             <Button
               key={label}
               onClick={() => download({os: value, version: latestVersion})}
+              disabled={disabled}
             >
               Download For&nbsp;
               {label}

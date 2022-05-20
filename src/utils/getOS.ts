@@ -23,7 +23,7 @@ const getOS = (): GetOS => {
     os = {os: 'Linux', value: OS.LINUX};
   }
 
-  return os;
+  return {os: 'Mac', value: OS.MAC};
 };
 
 export default getOS;
